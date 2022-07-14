@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/Details";
-import Link from "next/Link";
 
 export default function pokemon({ pokemon }) {
   return (
