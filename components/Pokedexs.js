@@ -49,478 +49,480 @@ import poppilo from "../public/images/alola/728.png";
 
 export default function Pokedexs() {
   return (
-    <div className="w-full p-10 mt-10 bg-white rounded-lg shadow-lg ">
-      <div className="flex items-end justify-between mb-12 header">
-        <div className="title">
-          <p className="pt-5 mb-4 text-4xl md:pt-0">Pokedexs</p>
-          <p className="text-2xl">
-            Each Pokedex display their region&apos;s native Pokemon and their
-            respective details.
+    <main className="py-20">
+      <div className="w-full bg-gray-100 border-2 border-gray-300 rounded-lg shadow-lg">
+        <div className="flex items-end justify-between mb-12 bg-white border-b-2 rounded-t-lg header">
+          <div className="px-5 pt-10 title">
+            <p className="text-4xl text-gray-600">Pokedexs</p>
+            <p className="mb-5 text-xl font-light text-gray-500">
+              Each pokedex display their region&apos;s native Pokemon and their
+              respective details.
+            </p>
+          </div>
+          <div className="px-10 py-5 text-end">
+            <Link href="">
+              <a target="_blank">
+                <button className="flex-shrink-0 invisible px-4 py-2 text-white rounded-lg shadow-xl font-inset bg-sky-500 hover:bg-sky-700 lg:visible">
+                  Submit Issues
+                </button>
+              </a>
+            </Link>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3">
+          {/* Kanto */}
+          <div className="m-auto overflow-hidden bg-white border border-gray-300 rounded-lg shadow-xl cursor-pointer h-90 w-60 md:w-80">
+            <Link href="/kanto">
+              <div className="block w-full h-full">
+                <Image
+                  src={kanto}
+                  alt="Kanto Region"
+                  className="object-cover w-full max-h-40"
+                ></Image>
+                <div className="w-full p-4 bg-white">
+                  <p className="font-medium text-sky-500 text-md">Pokedex</p>
+                  <p className="font-light text-gray-400 text-md">
+                    The Kanto region is a region of the Pokemon World. Kanto is
+                    the setting of the first generation of games and can be
+                    played in generations two, three, four, and seven.
+                  </p>
+                  <div className="flex items-center mt-4">
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="bulbasaur"
+                          src={bulbasaur}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="charmander"
+                          src={charmander}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="squirtle"
+                          src={squirtle}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+          {/* Johto */}
+          <div className="m-auto overflow-hidden bg-white border border-gray-300 rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
+            <Link href="/Johto">
+              <div className="block w-full h-full">
+                <Image
+                  src={johto}
+                  alt="Johto Region"
+                  className="object-cover w-full max-h-40"
+                ></Image>
+                <div className="w-full p-4 bg-white">
+                  <p className="font-medium text-sky-500 text-md">Pokedex</p>
+                  <p className="font-light text-gray-400 text-md">
+                    The Johto region is a region of the Pokemon World. Johto is
+                    the setting of the second generation of games and can be
+                    played in generations two and four of the core series.
+                  </p>
+                  <div className="flex items-center mt-4">
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="chikorita"
+                          src={chikorita}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="cyndaquil"
+                          src={cyndaquil}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="totodile"
+                          src={totodile}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+          {/* hoenn */}
+          <div className="m-auto overflow-hidden bg-white border border-gray-300 rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
+            <Link href="/Hoenn">
+              <div className="block w-full h-full">
+                <Image
+                  src={hoenn}
+                  alt="Hoenn Region"
+                  className="object-cover w-full max-h-40"
+                ></Image>
+                <div className="w-full p-4 bg-white">
+                  <p className="font-medium text-sky-500 text-md">Pokedex</p>
+                  <p className="font-light text-gray-400 text-md">
+                    The Johto region is a region of the Pokemon World. Johto is
+                    the setting of the second generation of games and can be
+                    played in generations two and four of the core series.
+                  </p>
+                  <div className="flex items-center mt-4">
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="treeko"
+                          src={treeko}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="torchic"
+                          src={torchic}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="mudkip"
+                          src={mudkip}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+          {/* Sinnoh */}
+          <div className="m-auto overflow-hidden bg-white border border-gray-300 rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
+            <Link href="/Sinnoh">
+              <div className="block w-full h-full">
+                <Image
+                  src={sinnoh}
+                  alt="Sinnoh Region"
+                  className="object-cover w-full max-h-40"
+                ></Image>
+                <div className="w-full p-4 bg-white">
+                  <p className="font-medium text-sky-500 text-md">Pokedex</p>
+                  <p className="font-light text-gray-400 text-md">
+                    The Johto region is a region of the Pokemon World. Johto is
+                    the setting of the second generation of games and can be
+                    played in generations two and four of the core series.
+                  </p>
+                  <div className="flex items-center mt-4">
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="turtwig"
+                          src={turtwig}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="chimchar"
+                          src={chimchar}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="piplup"
+                          src={piplup}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+          {/* Unova */}
+          <div className="m-auto overflow-hidden bg-white border border-gray-300 rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
+            <Link href="/Unova">
+              <div className="block w-full h-full">
+                <Image
+                  src={unova}
+                  alt="Unova Region"
+                  className="object-cover w-full max-h-40"
+                ></Image>
+                <div className="w-full p-4 bg-white">
+                  <p className="font-medium text-sky-500 text-md">Pokedex</p>
+                  <p className="font-light text-gray-400 text-md">
+                    The Johto region is a region of the Pokemon World. Johto is
+                    the setting of the second generation of games and can be
+                    played in generations two and four of the core series.
+                  </p>
+                  <div className="flex items-center mt-4">
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="snivy"
+                          src={snivy}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="tepig"
+                          src={tepig}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="oshawott"
+                          src={oshawott}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+          {/* Kalos */}
+          <div className="m-auto overflow-hidden bg-white border border-gray-300 rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
+            <Link href="/Kalos">
+              <div className="block w-full h-full">
+                <Image
+                  src={kalos}
+                  alt="Kalos Region"
+                  className="object-cover w-full max-h-40"
+                ></Image>
+                <div className="w-full p-4 bg-white">
+                  <p className="font-medium text-sky-500 text-md">Pokedex</p>
+                  <p className="font-light text-gray-400 text-md">
+                    The Johto region is a region of the Pokemon World. Johto is
+                    the setting of the second generation of games and can be
+                    played in generations two and four of the core series.
+                  </p>
+                  <div className="flex items-center mt-4">
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="chespin"
+                          src={chespin}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="fennekin"
+                          src={fennekin}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="froakie"
+                          src={froakie}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+          {/* Alola */}
+          <div className="m-auto overflow-hidden bg-white border border-gray-300 rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
+            <Link href="/Alola">
+              <div className="block w-full h-full">
+                <Image
+                  src={alola}
+                  alt="Alola Region"
+                  className="object-cover w-full max-h-40"
+                ></Image>
+                <div className="w-full p-4 bg-white">
+                  <p className="font-medium text-sky-500 text-md">Pokedex</p>
+                  <p className="font-light text-gray-400 text-md">
+                    The Johto region is a region of the Pokemon World. Johto is
+                    the setting of the second generation of games and can be
+                    played in generations two and four of the core series.
+                  </p>
+                  <div className="flex items-center mt-4">
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="rowlet"
+                          src={rowlet}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="litten"
+                          src={litten}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="poppilo"
+                          src={poppilo}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+          {/* Galar */}
+          <div className="m-auto overflow-hidden bg-white border border-gray-300 rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
+            <Link href="/Galar">
+              <div className="block w-full h-full">
+                <Image
+                  src={galar}
+                  alt="Galar Region"
+                  className="object-cover w-full max-h-40"
+                ></Image>
+                <div className="w-full p-4 bg-white">
+                  <p className="font-medium text-sky-500 text-md">Pokedex</p>
+                  <p className="font-light text-gray-400 text-md">
+                    The Johto region is a region of the Pokemon World. Johto is
+                    the setting of the second generation of games and can be
+                    played in generations two and four of the core series.
+                  </p>
+                  <div className="flex items-center mt-4">
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="grookey"
+                          src={grookey}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="scorbunny"
+                          src={scorbunny}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                    <Link href="">
+                      <a className="relative block px-2">
+                        <Image
+                          alt="sobble"
+                          src={sobble}
+                          width={40}
+                          height={40}
+                          className="object-cover mx-auto rounded-full"
+                        ></Image>
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className="mt-10 font-light text-gray-500 text-light text-md">
+          <p className="p-5">
+            Pokedex images by{" "}
+            <Link href="https://ko-fi.com/album/Pokemon-Art-Z8Z051HNG">
+              <a target="_blank" className="border-b border-sky-500">
+                Quassihollic
+              </a>
+            </Link>{" "}
+            on Ko-fi
           </p>
         </div>
-        <div className="text-end">
-          <Link href="">
-            <a target="_blank">
-              <button className="flex-shrink-0 invisible px-4 py-2 text-white rounded-lg shadow-xl font-inset bg-sky-500 hover:bg-sky-700 lg:visible">
-                Submit Issues
-              </button>
-            </a>
-          </Link>
-        </div>
       </div>
-      <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3">
-        {/* Kanto */}
-        <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-          <Link href="/kanto">
-            <div className="block w-full h-full">
-              <Image
-                src={kanto}
-                alt="Kanto Region"
-                className="object-cover w-full max-h-40"
-              ></Image>
-              <div className="w-full p-4 bg-white">
-                <p className="font-medium text-sky-500 text-md">Pokedex</p>
-                <p className="font-light text-gray-400 text-md">
-                  The Kanto region is a region of the Pokemon World. Kanto is
-                  the setting of the first generation of games and can be played
-                  in generations two, three, four, and seven.
-                </p>
-                <div className="flex items-center mt-4">
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="bulbasaur"
-                        src={bulbasaur}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="charmander"
-                        src={charmander}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="squirtle"
-                        src={squirtle}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </Link>
-        </div>
-        {/* Johto */}
-        <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-          <Link href="/Johto">
-            <div className="block w-full h-full">
-              <Image
-                src={johto}
-                alt="Johto Region"
-                className="object-cover w-full max-h-40"
-              ></Image>
-              <div className="w-full p-4 bg-white">
-                <p className="font-medium text-sky-500 text-md">Pokedex</p>
-                <p className="font-light text-gray-400 text-md">
-                  The Johto region is a region of the Pokemon World. Johto is
-                  the setting of the second generation of games and can be
-                  played in generations two and four of the core series.
-                </p>
-                <div className="flex items-center mt-4">
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="chikorita"
-                        src={chikorita}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="cyndaquil"
-                        src={cyndaquil}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="totodile"
-                        src={totodile}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </Link>
-        </div>
-        {/* hoenn */}
-        <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-          <Link href="/Hoenn">
-            <div className="block w-full h-full">
-              <Image
-                src={hoenn}
-                alt="Hoenn Region"
-                className="object-cover w-full max-h-40"
-              ></Image>
-              <div className="w-full p-4 bg-white">
-                <p className="font-medium text-sky-500 text-md">Pokedex</p>
-                <p className="font-light text-gray-400 text-md">
-                  The Johto region is a region of the Pokemon World. Johto is
-                  the setting of the second generation of games and can be
-                  played in generations two and four of the core series.
-                </p>
-                <div className="flex items-center mt-4">
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="treeko"
-                        src={treeko}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="torchic"
-                        src={torchic}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="mudkip"
-                        src={mudkip}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </Link>
-        </div>
-        {/* Sinnoh */}
-        <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-          <Link href="/Sinnoh">
-            <div className="block w-full h-full">
-              <Image
-                src={sinnoh}
-                alt="Sinnoh Region"
-                className="object-cover w-full max-h-40"
-              ></Image>
-              <div className="w-full p-4 bg-white">
-                <p className="font-medium text-sky-500 text-md">Pokedex</p>
-                <p className="font-light text-gray-400 text-md">
-                  The Johto region is a region of the Pokemon World. Johto is
-                  the setting of the second generation of games and can be
-                  played in generations two and four of the core series.
-                </p>
-                <div className="flex items-center mt-4">
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="turtwig"
-                        src={turtwig}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="chimchar"
-                        src={chimchar}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="piplup"
-                        src={piplup}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </Link>
-        </div>
-        {/* Unova */}
-        <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-          <Link href="/Unova">
-            <div className="block w-full h-full">
-              <Image
-                src={unova}
-                alt="Unova Region"
-                className="object-cover w-full max-h-40"
-              ></Image>
-              <div className="w-full p-4 bg-white">
-                <p className="font-medium text-sky-500 text-md">Pokedex</p>
-                <p className="font-light text-gray-400 text-md">
-                  The Johto region is a region of the Pokemon World. Johto is
-                  the setting of the second generation of games and can be
-                  played in generations two and four of the core series.
-                </p>
-                <div className="flex items-center mt-4">
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="snivy"
-                        src={snivy}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="tepig"
-                        src={tepig}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="oshawott"
-                        src={oshawott}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </Link>
-        </div>
-        {/* Kalos */}
-        <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-          <Link href="/Kalos">
-            <div className="block w-full h-full">
-              <Image
-                src={kalos}
-                alt="Kalos Region"
-                className="object-cover w-full max-h-40"
-              ></Image>
-              <div className="w-full p-4 bg-white">
-                <p className="font-medium text-sky-500 text-md">Pokedex</p>
-                <p className="font-light text-gray-400 text-md">
-                  The Johto region is a region of the Pokemon World. Johto is
-                  the setting of the second generation of games and can be
-                  played in generations two and four of the core series.
-                </p>
-                <div className="flex items-center mt-4">
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="chespin"
-                        src={chespin}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="fennekin"
-                        src={fennekin}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="froakie"
-                        src={froakie}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </Link>
-        </div>
-        {/* Alola */}
-        <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-          <Link href="/Alola">
-            <div className="block w-full h-full">
-              <Image
-                src={alola}
-                alt="Alola Region"
-                className="object-cover w-full max-h-40"
-              ></Image>
-              <div className="w-full p-4 bg-white">
-                <p className="font-medium text-sky-500 text-md">Pokedex</p>
-                <p className="font-light text-gray-400 text-md">
-                  The Johto region is a region of the Pokemon World. Johto is
-                  the setting of the second generation of games and can be
-                  played in generations two and four of the core series.
-                </p>
-                <div className="flex items-center mt-4">
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="rowlet"
-                        src={rowlet}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="litten"
-                        src={litten}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="poppilo"
-                        src={poppilo}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </Link>
-        </div>
-        {/* Galar */}
-        <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-          <Link href="/Galar">
-            <div className="block w-full h-full">
-              <Image
-                src={galar}
-                alt="Galar Region"
-                className="object-cover w-full max-h-40"
-              ></Image>
-              <div className="w-full p-4 bg-white">
-                <p className="font-medium text-sky-500 text-md">Pokedex</p>
-                <p className="font-light text-gray-400 text-md">
-                  The Johto region is a region of the Pokemon World. Johto is
-                  the setting of the second generation of games and can be
-                  played in generations two and four of the core series.
-                </p>
-                <div className="flex items-center mt-4">
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="grookey"
-                        src={grookey}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="scorbunny"
-                        src={scorbunny}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                  <Link href="">
-                    <a className="relative block px-2">
-                      <Image
-                        alt="sobble"
-                        src={sobble}
-                        width={40}
-                        height={40}
-                        className="object-cover mx-auto rounded-full"
-                      ></Image>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </div>
-      <div className="mt-10 font-light text-gray-500 text-light text-md">
-        <p>
-          Pokedex images by{" "}
-          <Link href="https://ko-fi.com/album/Pokemon-Art-Z8Z051HNG">
-            <a target="_blank" className="border-b border-sky-500">
-              Quassihollic
-            </a>
-          </Link>{" "}
-          on Ko-fi
-        </p>
-      </div>
-    </div>
+    </main>
   );
 }

@@ -5,9 +5,7 @@ export default function Layout({ title, children }) {
   return (
     <section lang="en">
       <Head>
-        {/* TODO Optimize SEO */}
         <title>{title}</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* TODO Navbar */}
       <div>
