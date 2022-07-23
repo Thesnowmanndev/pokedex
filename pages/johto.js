@@ -5,40 +5,59 @@ import Image from "next/image";
 export default function johto({ pokemon }) {
   return (
     <Layout title="Johto Pokedex">
-      <div className="flex justify-center hover:cursor-none">
-        <h1 className="mb-8 text-4xl uppercase">
-          <span className="border-b-2 border-sky-500 hover:text-orange-500 hover:cursor-none">
-            Johto Region | Pokedex
-          </span>
-        </h1>
-      </div>
-      <div className="flex justify-center">
-        <ul className="grid items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-          {pokemon.map((eachPokemon, index) => (
-            <li key={index} className="mx-1">
-              <Link href={`/pokemon?id=${index + 152}`}>
-                <a>
-                  <div className="my-4 shadow-xl w-96 card card-side bg-base-100">
-                    <figure>
-                      <Image
-                        src={`${eachPokemon.image}`}
-                        alt={eachPokemon.name}
-                        width={300}
-                        height={300}
-                      />
-                    </figure>
-                    <div className="card-body">
-                      <h2 className="capitalize card-title">
-                        <span>{index + 152}.</span> {eachPokemon.name}
-                      </h2>
-                    </div>
-                  </div>
+      <main className="py-20">
+        <div className="w-full bg-white border-2 border-gray-300 rounded-lg shadow-lg">
+          <div className="flex items-end justify-between mb-12 bg-white border-b-2 rounded-t-lg header">
+            <div className="px-5 pt-10 title">
+              <p className="text-4xl text-gray-600">Johto Region Pokemon</p>
+              <p className="pt-5 mb-5 text-xl font-light text-gray-500">
+                The Pokemon listed below are the Pokemon originally developed
+                for the Gold, Silver, and Crystal versions on the Gameboy.
+              </p>
+            </div>
+            <div className="px-20 py-5 text-end">
+              <Link href="">
+                <a target="_blank">
+                  <button className="flex-shrink-0 invisible px-4 py-2 text-white rounded-lg shadow-xl font-inset bg-sky-500 hover:bg-sky-700 lg:visible">
+                    Submit Issues
+                  </button>
                 </a>
               </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+            </div>
+          </div>
+          {/* Pokemon */}
+          <div className="flex justify-center px-10">
+            <ul className="grid grid-cols-1 gap-12 lg:grid-cols-2 xl:grid-cols-3">
+              {pokemon.map((eachPokemon, index) => (
+                <li key={index} className="mx-1">
+                  <Link href={`/pokemon?id=${index + 152}`}>
+                    <a>
+                      <div className="my-4 bg-gray-300 rounded-md shadow-xl w-96 card card-side">
+                        <figure className="flex justify-center border-b-2 border-gray-500 shadow-xl">
+                          <Image
+                            src={`${eachPokemon.image}`}
+                            alt={eachPokemon.name}
+                            width={300}
+                            height={300}
+                          />
+                        </figure>
+                        <div className="bg-white card-body">
+                          <h1 className="px-5 text-xl text-gray-500">
+                            #{index + 152}
+                          </h1>
+                          <h2 className="px-5 py-5 text-2xl tracking-tight text-gray-800 capitalize card-title">
+                            {eachPokemon.name}
+                          </h2>
+                        </div>
+                      </div>
+                    </a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </main>
     </Layout>
   );
 }
