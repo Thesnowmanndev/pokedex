@@ -20,7 +20,12 @@ export default function galar({ pokemon }) {
                 <a>
                   <div className="my-4 shadow-xl w-96 card card-side bg-base-100">
                     <figure>
-                      <img src={eachPokemon.image} alt={eachPokemon.name}></img>
+                      <Image
+                        src={`${eachPokemon.image}`}
+                        alt={eachPokemon.name}
+                        width={300}
+                        height={300}
+                      />
                     </figure>
                     <div className="card-body">
                       <h2 className="capitalize card-title">
