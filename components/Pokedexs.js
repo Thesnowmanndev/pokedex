@@ -127,7 +127,7 @@ export default function Pokedexs() {
           </div>
           {/* Johto */}
           <div className="m-auto overflow-hidden bg-white border border-gray-300 rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-            <Link href="/Johto">
+            <Link href="/johto">
               <div className="block w-full h-full">
                 <Image
                   src={johto}
@@ -182,7 +182,7 @@ export default function Pokedexs() {
           </div>
           {/* hoenn */}
           <div className="m-auto overflow-hidden bg-white border border-gray-300 rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-            <Link href="/Hoenn">
+            <Link href="/hoenn">
               <div className="block w-full h-full">
                 <Image
                   src={hoenn}
@@ -237,7 +237,7 @@ export default function Pokedexs() {
           </div>
           {/* Sinnoh */}
           <div className="m-auto overflow-hidden bg-white border border-gray-300 rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-            <Link href="/Sinnoh">
+            <Link href="/sinnoh">
               <div className="block w-full h-full">
                 <Image
                   src={sinnoh}
@@ -292,7 +292,7 @@ export default function Pokedexs() {
           </div>
           {/* Unova */}
           <div className="m-auto overflow-hidden bg-white border border-gray-300 rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-            <Link href="/Unova">
+            <Link href="/unova">
               <div className="block w-full h-full">
                 <Image
                   src={unova}
@@ -347,7 +347,7 @@ export default function Pokedexs() {
           </div>
           {/* Kalos */}
           <div className="m-auto overflow-hidden bg-white border border-gray-300 rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-            <Link href="/Kalos">
+            <Link href="/kalos">
               <div className="block w-full h-full">
                 <Image
                   src={kalos}
@@ -402,7 +402,7 @@ export default function Pokedexs() {
           </div>
           {/* Alola */}
           <div className="m-auto overflow-hidden bg-white border border-gray-300 rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-            <Link href="/Alola">
+            <Link href="/alola">
               <div className="block w-full h-full">
                 <Image
                   src={alola}
@@ -457,7 +457,7 @@ export default function Pokedexs() {
           </div>
           {/* Galar */}
           <div className="m-auto overflow-hidden bg-white border border-gray-300 rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
-            <Link href="/Galar">
+            <Link href="/galar">
               <div className="block w-full h-full">
                 <Image
                   src={galar}
