@@ -52,7 +52,7 @@ export default function Pokedexs() {
       <div className="w-full bg-gray-100 border-2 border-gray-300 rounded-lg shadow-lg">
         <div className="flex items-end justify-between mb-12 bg-white border-b-2 rounded-t-lg header">
           <div className="px-5 pt-10 title">
-            <p className="text-4xl text-gray-600">Pokedexs</p>
+            <p className="text-4xl text-gray-600 primary-font">Pokedexs</p>
             <p className="mb-5 text-xl font-light text-gray-500">
               Each pokedex display their region&apos;s native Pokemon and their
               respective details.
@@ -86,7 +86,7 @@ export default function Pokedexs() {
                     played in generations two, three, four, and seven.
                   </p>
                   <div className="flex items-center mt-4">
-                    <Link href="">
+                    <Link href="/pokemon?id=1">
                       <a className="relative block px-2">
                         <Image
                           alt="bulbasaur"
@@ -97,7 +97,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=4">
                       <a className="relative block px-2">
                         <Image
                           alt="charmander"
@@ -108,7 +108,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=7">
                       <a className="relative block px-2">
                         <Image
                           alt="squirtle"
@@ -141,7 +141,7 @@ export default function Pokedexs() {
                     played in generations two and four of the core series.
                   </p>
                   <div className="flex items-center mt-4">
-                    <Link href="">
+                    <Link href="/pokemon?id=152">
                       <a className="relative block px-2">
                         <Image
                           alt="chikorita"
@@ -152,7 +152,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=155">
                       <a className="relative block px-2">
                         <Image
                           alt="cyndaquil"
@@ -163,7 +163,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=158">
                       <a className="relative block px-2">
                         <Image
                           alt="totodile"
@@ -196,7 +196,7 @@ export default function Pokedexs() {
                     played in generations two and four of the core series.
                   </p>
                   <div className="flex items-center mt-4">
-                    <Link href="">
+                    <Link href="/pokemon?id=252">
                       <a className="relative block px-2">
                         <Image
                           alt="treeko"
@@ -207,7 +207,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=255">
                       <a className="relative block px-2">
                         <Image
                           alt="torchic"
@@ -218,7 +218,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=258">
                       <a className="relative block px-2">
                         <Image
                           alt="mudkip"
@@ -251,7 +251,7 @@ export default function Pokedexs() {
                     played in generations two and four of the core series.
                   </p>
                   <div className="flex items-center mt-4">
-                    <Link href="">
+                    <Link href="/pokemon?id=387">
                       <a className="relative block px-2">
                         <Image
                           alt="turtwig"
@@ -262,7 +262,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=390">
                       <a className="relative block px-2">
                         <Image
                           alt="chimchar"
@@ -273,7 +273,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=393">
                       <a className="relative block px-2">
                         <Image
                           alt="piplup"
@@ -306,7 +306,7 @@ export default function Pokedexs() {
                     played in generations two and four of the core series.
                   </p>
                   <div className="flex items-center mt-4">
-                    <Link href="">
+                    <Link href="/pokemon?id=495">
                       <a className="relative block px-2">
                         <Image
                           alt="snivy"
@@ -317,7 +317,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=498">
                       <a className="relative block px-2">
                         <Image
                           alt="tepig"
@@ -328,7 +328,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=501">
                       <a className="relative block px-2">
                         <Image
                           alt="oshawott"
@@ -361,7 +361,7 @@ export default function Pokedexs() {
                     played in generations two and four of the core series.
                   </p>
                   <div className="flex items-center mt-4">
-                    <Link href="">
+                    <Link href="/pokemon?id=650">
                       <a className="relative block px-2">
                         <Image
                           alt="chespin"
@@ -372,7 +372,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=653">
                       <a className="relative block px-2">
                         <Image
                           alt="fennekin"
@@ -383,7 +383,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=656">
                       <a className="relative block px-2">
                         <Image
                           alt="froakie"
@@ -416,7 +416,7 @@ export default function Pokedexs() {
                     played in generations two and four of the core series.
                   </p>
                   <div className="flex items-center mt-4">
-                    <Link href="">
+                    <Link href="/pokemon?id=722">
                       <a className="relative block px-2">
                         <Image
                           alt="rowlet"
@@ -427,7 +427,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=725">
                       <a className="relative block px-2">
                         <Image
                           alt="litten"
@@ -438,7 +438,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=728">
                       <a className="relative block px-2">
                         <Image
                           alt="poppilo"
@@ -471,7 +471,7 @@ export default function Pokedexs() {
                     played in generations two and four of the core series.
                   </p>
                   <div className="flex items-center mt-4">
-                    <Link href="">
+                    <Link href="/pokemon?id=810">
                       <a className="relative block px-2">
                         <Image
                           alt="grookey"
@@ -482,7 +482,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=813">
                       <a className="relative block px-2">
                         <Image
                           alt="scorbunny"
@@ -493,7 +493,7 @@ export default function Pokedexs() {
                         ></Image>
                       </a>
                     </Link>
-                    <Link href="">
+                    <Link href="/pokemon?id=816">
                       <a className="relative block px-2">
                         <Image
                           alt="sobble"
@@ -512,7 +512,7 @@ export default function Pokedexs() {
         </div>
         <div className="mt-10 font-light text-gray-500 text-light text-md">
           <p className="p-5">
-            Pokedex images by{" "}
+            Pokedex badge images by{" "}
             <Link href="https://ko-fi.com/album/Pokemon-Art-Z8Z051HNG">
               <a target="_blank" className="border-b border-sky-500">
                 Quassihollic

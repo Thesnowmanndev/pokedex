@@ -1,10 +1,11 @@
 import Head from "next/head";
 
-export default function Layout({ title, children }) {
+export default function Layout({ title, description, children }) {
   return (
     <section>
       <Head>
         <title>{title}</title>
+        <meta name="description" content={description}></meta>
       </Head>
       {/* TODO Navbar */}
       <div>
