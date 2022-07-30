@@ -96,46 +96,6 @@ export default function Navbar() {
               Home
             </a>
           </Link>
-          <Link href="/kanto">
-            <a className="block px-3 py-2 text-base font-medium text-gray-800 rounded-md hover:text-orange-500">
-              Kanto
-            </a>
-          </Link>
-          <Link href="/johto">
-            <a className="block px-3 py-2 text-base font-medium text-gray-800 rounded-md hover:text-orange-500">
-              Johto
-            </a>
-          </Link>
-          <Link href="/hoenn">
-            <a className="block px-3 py-2 text-base font-medium text-gray-800 rounded-md hover:text-orange-500">
-              Hoenn
-            </a>
-          </Link>
-          <Link href="/sinnoh">
-            <a className="block px-3 py-2 text-base font-medium text-gray-800 rounded-md hover:text-orange-500">
-              Sinnoh
-            </a>
-          </Link>
-          <Link href="/unova">
-            <a className="block px-3 py-2 text-base font-medium text-gray-800 rounded-md hover:text-orange-500">
-              Unova
-            </a>
-          </Link>
-          <Link href="/kalos">
-            <a className="block px-3 py-2 text-base font-medium text-gray-800 rounded-md hover:text-orange-500">
-              Kalos
-            </a>
-          </Link>
-          <Link href="/alola">
-            <a className="block px-3 py-2 text-base font-medium text-gray-800 rounded-md hover:text-orange-500">
-              Alola
-            </a>
-          </Link>
-          <Link href="/galar">
-            <a className="block px-3 py-2 text-base font-medium text-gray-800 rounded-md hover:text-orange-500">
-              Galar
-            </a>
-          </Link>
         </div>
       </div>
     </nav>
