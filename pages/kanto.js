@@ -44,8 +44,8 @@ export default function Home({ pokemon }) {
                           <Image
                             src={`${eachPokemon.image}`}
                             alt={eachPokemon.name}
-                            width={300}
-                            height={300}
+                            width={200}
+                            height={200}
                           />
                         </figure>
                         <div className="bg-white card-body">
