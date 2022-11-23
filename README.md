@@ -14,6 +14,14 @@ This project was my first "large" web application project. The idea behind it is
 
 (SSR) This page displays basic data from the PokeAPI. I created custom badges as the API just displays the word of the type.
 
-![Main Page of Pokedex]()
-![Example of a Pokedex Pokemon]()
-![Example of a Pokemon]()
+### Example of Main Page (See deployment for practicle example)
+
+![Main Page of Pokedex](https://github.com/Thesnowmanndev/pokedex/blob/main/github-images/Pokedex%20Main%20Page.png?raw=true)
+
+### Example of a Pokedex page (See deployment for practicle example)
+
+![Example of a Pokedex Pokemon](https://github.com/Thesnowmanndev/pokedex/blob/main/github-images/Pokedex%20Pokemon%20Generation.png?raw=true)
+
+### Example of a individual pokemon page (See deployment for practicle example)
+
+![Example of a Pokemon](https://github.com/Thesnowmanndev/pokedex/blob/main/github-images/Pokemon%20template.png?raw=true)
