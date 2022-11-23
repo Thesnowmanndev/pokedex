@@ -13,3 +13,7 @@ This project was my first "large" web application project. The idea behind it is
 ## Individual Pokemon Details
 
 (SSR) This page displays basic data from the PokeAPI. I created custom badges as the API just displays the word of the type.
+
+![Main Page of Pokedex]()
+![Example of a Pokedex Pokemon]()
+![Example of a Pokemon]()
